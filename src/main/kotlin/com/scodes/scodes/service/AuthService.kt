@@ -6,7 +6,9 @@ import com.scodes.scodes.dto.RegisterRequest
 import com.scodes.scodes.entity.User
 import com.scodes.scodes.repository.UserRepository
 import org.springframework.security.crypto.password.PasswordEncoder
+import org.springframework.stereotype.Service
 
+@Service
 class AuthService (
     private val jwtService: JwtService,
     private val userRepository: UserRepository,

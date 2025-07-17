@@ -10,7 +10,7 @@ import java.util.Date
 @Service
 class JwtService{
 
-    private val secretKey = "SecretKey"
+    private val secretKey = "6d5642f8275013e27e1bf123bdb07075ccbc172846116ff6f45eee8fd14f6d30"
 
     fun generateToken(user: User): String {
         return Jwts.builder()
