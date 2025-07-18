@@ -26,7 +26,7 @@ class JwtService{
         Jwts.parserBuilder()
             .setSigningKey(Keys.hmacShaKeyFor(secretKey.toByteArray()))
             .build()
-            .parseClaimsJwt(token)
+            .parseClaimsJws(token)
             .body
             .subject
 }
